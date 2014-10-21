@@ -1,0 +1,21 @@
+{
+  "name": "god-it",
+  "version": "0.0.0",
+  "description": "Survey your comprehension",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PoJo93/god-it.git"
+  },
+  "keywords": [
+    "awesome"
+  ],
+  "author": "",
+  "license": "GPL v3",
+  "bugs": {
+    "url": "https://github.com/PoJo93/god-it/issues"
+  }
+}
