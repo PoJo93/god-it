@@ -3,10 +3,40 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<title></title>
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="/css/style.css">
+
+	<script src="/components/platform/platform.js"></script>
+
+	<link rel="import" href="/components/core-scaffold/core-scaffold.html">
+	<link rel="import" href="/components/core-header-panel/core-header-panel.html">
+	<link rel="import" href="/components/core-menu/core-menu.html">
+	<link rel="import" href="/components/core-item/core-item.html">
+	<link rel="import" href="/components/core-card/core-card.html">
+	<link rel="import" href="/components/paper-dialog/paper-dialog.html">
+	<link rel="import" href="/components/paper-dialog/paper-dialog-transition.html">
+	<link rel="import" href="/components/paper-button/paper-button.html">
 </head>
-<body>
-Hello World!
+
+<body unresolved>
+	<core-scaffold>
+
+		<core-header-panel navigation flex mode="seamed">
+			<core-toolbar>App</core-toolbar>
+			<core-menu theme="core-light-theme">
+				<core-item icon="settings" label="item1"></core-item>
+				<core-item icon="settings" label="item1"></core-item>
+			</core-menu>
+		</core-header-panel>
+
+		<!--<paper-dialog id="a" transition="paper-dialog-transition-center" heading="Dialog" opened="true" autoCloseDisabled="true">
+			test
+			<paper-button affirmative autofocus>Vote</paper-button>
+		</paper-dialog>-->
+		<core-card>abc</core-card>
+
+	</core-scaffold>
 </body>
+
 </html>

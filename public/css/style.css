@@ -1,0 +1,14 @@
+
+body {
+	font-family: 'Roboto', 'Open Sans', sans-serif;
+}
+
+paper-dialog {
+	width: 100%;
+	max-width: 400px;
+}
+
+paper-dialog paper-button {
+	font-weight: bold;
+}
+

@@ -6,23 +6,16 @@ var socketIo = require('socket.io');
 // routes
 var routes = require('./routes/index');
 
-//Create Server
+// Create Server
 var app = express();
 var server = http.Server(app);
 var io = socketIo(server); // Websockets
 
-//routes
-app.use('/', routes);
+app.use(express.static(__dirname + '/public'));
 
-/// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-    var err = new Error('Not Found');
-    err.status = 404;
-    next(err);
-});
-
-var port = process.env.PORT || 8000; // Get Serverport
+var port = process.env.PORT || 8000; // Get server port
 app.listen(port, function() {
-	console.log('Server started on port', port); // Start Server and print it 
+	// Start Server and print it 
+	console.log('Server started on port', port);
 });
 
