@@ -1,6 +1,8 @@
 
 body {
 	font-family: 'Roboto', 'Open Sans', sans-serif;
+	margin: 0;
+	background-color: #eee;
 }
 
 paper-dialog {
@@ -12,3 +14,42 @@ paper-dialog paper-button {
 	font-weight: bold;
 }
 
+#card {
+	/*width: 100%;
+	max-width: 400px;
+	border-radius: 2px;
+	position: absolute;
+	top: -50px;
+	z-index: 9999999;
+	display: block;
+	margin: auto;
+	padding: 12px;
+	background-color: #fff;*/
+
+	padding: 72px;
+	display: block;
+	background-color: #fff;
+	border-radius: 2px;
+	width: 100%;
+	max-width: 800px;
+	margin: 100px auto;
+	min-height: 300px;
+}
+
+paper-fab {
+	position: absolute;
+	right: -28px;
+}
+
+core-header-panel {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+core-toolbar {
+	background-color: orange;
+	color: white;
+}

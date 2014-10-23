@@ -11,34 +11,49 @@
 
 	<link rel="import" href="/components/core-scaffold/core-scaffold.html">
 	<link rel="import" href="/components/core-header-panel/core-header-panel.html">
+	<link rel="import" href="/components/core-toolbar/core-toolbar.html">
 	<link rel="import" href="/components/core-menu/core-menu.html">
 	<link rel="import" href="/components/core-item/core-item.html">
-	<link rel="import" href="/components/core-card/core-card.html">
-	<link rel="import" href="/components/core-icons/social-icons.html">
-	<link rel="import" href="/components/core-icons/social-icons.html">
+	<link rel="import" href="/components/paper-fab/paper-fab.html">
 	<link rel="import" href="/components/paper-dialog/paper-dialog.html">
 	<link rel="import" href="/components/paper-dialog/paper-dialog-transition.html">
 	<link rel="import" href="/components/paper-button/paper-button.html">
+	<link rel="import" href="/components/paper-checkbox/paper-checkbox.html">
 </head>
 
 <body unresolved>
-	<core-scaffold>
 
-		<core-header-panel navigation flex mode="seamed">
-			<core-toolbar>App</core-toolbar>
-			<core-menu theme="core-light-theme">
-				<core-item icon="drive-chart" label="Poll"></core-item>
-				<core-item icon="settings" label="Settings"></core-item>
-			</core-menu>
-		</core-header-panel>
+	<core-header-panel main shadow mode="cover">
 
-		<!--<paper-dialog id="a" transition="paper-dialog-transition-center" heading="Dialog" opened="true" autoCloseDisabled="true">
-			test
-			<paper-button affirmative autofocus>Vote</paper-button>
-		</paper-dialog>-->
-		<core-card>Hello World! Welcome to Hell!</core-card>
+		<core-toolbar class="tall">
+			<core-icon-button icon="arrow-back"></core-icon-button>
+			<div flex></div>
+			<core-icon-button icon="search"></core-icon-button>
+			<core-icon-button icon="more-vert"></core-icon-button>
+		</core-toolbar>
 
-	</core-scaffold>
+		<div id="card">
+			<paper-shadow z="3"></paper-shadow>
+
+			<paper-fab icon="check"></paper-fab>
+
+			<h1 style="margin-top: 0;">Frage blah blah blah?!</h1>
+
+			<paper-checkbox label="Option 1"></paper-checkbox>
+			<br><br>
+			<paper-checkbox label="Option 2"></paper-checkbox>
+			<br><br>
+			<paper-checkbox label="Option 3"></paper-checkbox>
+			<br><br>
+			<paper-checkbox label="Option 4"></paper-checkbox>
+			<br><br>
+			<paper-checkbox label="Option 5"></paper-checkbox>
+			<br><br>
+			<paper-checkbox label="Option 6"></paper-checkbox>
+		</div>
+
+	</core-header-panel>
+
 </body>
 
 </html>
