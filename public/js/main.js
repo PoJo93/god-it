@@ -1,4 +1,3 @@
-
 var ctx = document.getElementById('graph').getContext('2d');
 
 var list = [3, 4];
@@ -10,6 +9,8 @@ var chart = new Chart(ctx).Bar({
 			data: list
 		}
 	]
+}, {
+	scaleFontColor: "#ff9100"
 });
 console.log(chart);
 
